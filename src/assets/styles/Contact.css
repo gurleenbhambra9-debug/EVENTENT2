@@ -1,0 +1,163 @@
+/* contact one */
+#contact-one{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/videos/concert6.jpg');
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-one-h1{
+    font-family: var(--font-heading);
+    font-size: 80px;
+    border-bottom: 2px solid var(--skin-color);
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* 480px contact one */
+@media (max-width:480px){
+    .contact-one-h1{
+        font-size: 40px;
+    }
+}
+/* contact two */
+.contact-two-left{
+    padding:100px !important;
+     background-color: #f3d7bf;
+}
+.contact-form{
+ 
+    margin-top: 40px;
+  
+  
+}
+.contact-two-h3{
+    font-family: var(--font-heading);
+}
+.contact-two-h2{
+    font-family: var(--font-heading);
+    font-weight: bolder;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.contact-two-p{
+    margin-top: 30px;
+}
+.form-group1{
+    /* border:1px solid black; */
+    height: 40px;
+    display: flex;
+    gap:7px;
+}
+.form-group1 input{
+    width: 49%;
+    height:100%;
+    border-radius: 5px;
+    padding-left: 4px;
+    border: none;
+}
+.form-group1 input:focus{
+    outline: none;
+}
+.form-group2{
+    /* border:1px solid black; */
+    height: 40px;
+    margin-top: 10px;
+}
+.form-group2 input{
+    width: 99%;
+    height:100%;
+    border-radius: 5px;
+    padding-left: 4px;
+     border: none;
+}
+.form-group3{
+    /* border:1px solid black; */
+    height: 120px;
+    margin-top: 10px;
+}
+.form-group3 textarea{
+    height: 100%;
+    width: 99%;
+    border-radius: 5px;
+    padding-left: 4px;
+     border: none;
+}
+.contact-two-btn{
+    margin-top: 20px;
+    padding:10px 20px;
+     background-color:rgb(10, 178, 244);
+     border:none;
+     border-radius: 5px;
+}
+/* .details{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+} */
+
+.contact-two-right{
+    padding: 100px;
+}
+.contact-two-right-h2{
+    font-family: var(--font-heading);
+    margin-bottom: 40px;
+    font-weight: bolder;
+}
+.contact-two-right-h6{
+    font-family: var(--font-body);
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.contact-two-right-p{
+    font-family: var(--font-body);
+}
+.details{
+    margin-top: 40px;
+    border-top: 1px solid var(--skin-color);
+}
+.detail1, .detail2, .detail3{
+    display: flex;
+    /* border: 1px solid black; */
+    gap:30px;
+    align-items: center;
+    margin-top: 20px;
+}
+.detail1 i, .detail2 i, .detail3 i{
+    font-size: 30px;
+    color:var(--skin-color)
+}
+/* 480px contact two */
+@media (max-width:480px){
+    .contact-two-left{
+    padding:80px;
+    
+}
+
+.contact-two-h3{
+   
+    font-size: 20px;
+}
+.contact-two-h2{
+    font-size: 28px;
+   
+}
+
+
+
+.contact-two-right{
+    padding: 80px !important;
+}
+
+}
+/* contact three */
+#contact-three{
+    padding:20px;
+}
+.contact-three-col iframe{
+    width:100%;
+}

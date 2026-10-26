@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-heading: "Montserrat", sans-serif;
+    --font-heading2: "Plus Jakarta Sans", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-body2: "Open Sans", sans-serif;
+    --skin-color: #EAB88B;
+}
+/* index buttons */
+.index-btn1{
+    padding:10px 26px;
+    position: fixed;
+    top:30%;
+    right:0%;
+    background-color:rgb(10, 178, 244);
+    border:none;
+    z-index: 999;
+    box-shadow: 5px 5px 5px black;
+}
+.index-btn2{
+    padding:10px 20px;
+    position: fixed;
+    top:40%;
+    right:0%;
+    background-color: #fff;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+    z-index: 999;
+}

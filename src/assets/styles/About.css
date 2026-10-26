@@ -1,0 +1,196 @@
+/* about one */
+#about-one{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/videos/concert6.jpg');
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about-one-h1{
+    font-family: var(--font-heading);
+    font-size: 80px;
+    border-bottom: 2px solid var(--skin-color);
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* 480px about one */
+@media (max-width:480px){
+    .about-one-h1{
+        font-size: 40px;
+    }
+}
+/* about two */
+#about-two{
+    padding-top:130px !important;
+    padding-bottom: 130px !important;
+}
+.about-two-video{
+    width:100% !important;
+   
+    
+}
+.about-two-right{
+    padding:80px !important;
+}
+.about-two-h3{
+    font-family: var(--font-heading);
+}
+.about-two-h2{
+    font-family: var(--font-heading);
+    font-weight: bolder;
+    font-size: 40px;
+    border-bottom: 2px solid var(--skin-color);
+    padding-bottom: 60px;
+    
+}
+.about-two-p{
+    font-family: var(--font-body);
+    margin-top: 60px;
+}
+/* 480px about two */
+@media (max-width:480px){
+    #about-two{
+    padding-top:100px;
+    padding-bottom: 80px;
+}
+.about-two-video{
+    width:100%;
+    
+}
+.about-two-right{
+    padding:70px;
+}
+.about-two-h3{
+    font-size:20px;
+}
+.about-two-h2{
+    
+    font-size: 26px;
+    padding-bottom: 40px;
+    
+}
+.about-two-p{
+    
+    margin-top: 40px;
+}
+}
+/* about three */
+#about-three{
+    padding: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.about-three-h3{
+    text-align: center;
+    font-family: var(--font-heading);
+}
+.about-three-h2{
+    text-align: center;
+     font-family: var(--font-heading);
+     font-weight: bolder;
+     font-size: 40px;
+     margin-bottom: 70px;
+    
+}
+.about-three-img{
+    width:100%;
+    height: 500px;
+}
+.about-three-h5{
+    margin-top: 20px;
+    font-family: var(--font-body);
+}
+/* 480px about three */
+@media (max-width:480px){
+    #about-three{
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.about-three-h3{
+    font-size: 20px;
+}
+.about-three-h2{
+     font-size: 28px;
+     margin-bottom: 50px;
+    
+}
+
+}
+/* about four */
+.about-four-col-right{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/videos/concert1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about-four-col-left{
+    padding:120px !important;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.about-four-right-h2{
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: var(--font-body);
+}
+.about-four-right-p{
+    font-family: var(--font-body);
+}
+.about-four-left-h3{
+    font-family: var(--font-heading);
+}
+.about-four-left-h2{
+    font-family: var(--font-heading);
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.about-four-left-p{
+    font-family: var(--font-body);
+    margin-top: 50px;
+    
+}
+.about-four-col-left{
+    background-color:  #f3d7bf;
+}
+/* 480px about four */
+@media (max-width:480px){
+.about-four-col-left{
+    padding:70px
+}
+.about-four-right-h2{
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: var(--font-body);
+}
+.about-four-right-p{
+    font-family: var(--font-body);
+}
+.about-four-left-h3{
+    font-family: var(--font-heading);
+    font-size: 20px;
+    
+}
+.about-four-left-h2{
+
+    font-size: 28px;
+}
+.about-four-left-p{
+    margin-top: 30px;
+}
+
+}

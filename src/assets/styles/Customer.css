@@ -1,0 +1,74 @@
+#customer-one{
+    padding:60px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/videos/event8.jpg');
+    background-size: cover;
+    background-position: center;
+    color:white;
+    font-weight: bolder;
+}
+.customer-one-form{
+    /* border:1px solid black; */
+    padding:50px;
+}
+.customer-form-h2{
+    font-size: 50px;
+}
+.form-group1-customer, .form-group2-customer, .form-group3-customer, .form-group4-customer, .form-group5-customer{
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 30px;
+}
+.customer-one-form{
+    width:100%;
+    font-family: var(--font-heading);
+}
+.form-group1-customer input, .form-group2-customer input, .form-group3-customer input{
+    padding-left: 10px;
+    height:40px;
+}
+.form-group1-customer input:hover, .form-group2-customer input:hover, .form-group3-customer input:hover{
+    background: transparent;
+    border:1px solid white;
+    color:white;
+}
+.form-group1-customer input:focus, .form-group2-customer input:focus, .form-group3-customer input:focus{
+    outline: none;
+}
+.form-group6-customer{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 50px;
+}
+.form-group6-customer button{
+    padding:10px 20px;
+}
+.form-group6-customer button a{
+    text-decoration: none;
+    color:black;
+}
+.form-group4-customer input{
+   margin-left: 25px;
+}
+.customer-form-h2{
+    color: var(--skin-color)
+}
+#form-group5-customer-select{
+    height: 40px;
+}
+.customer-btn2{
+    background-color: var(--skin-color);
+    color:black;
+    border:none;
+}
+.customer-btn1{
+    background: transparent;
+    color:white;
+    border:none;
+}
+.customer-btn1 a{
+    color: #fff !important;
+}

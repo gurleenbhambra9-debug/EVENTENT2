@@ -1,0 +1,20 @@
+.index-btn1{
+    padding:10px 26px;
+    position: fixed;
+    top:30%;
+    right:0%;
+    background-color:rgb(10, 178, 244);
+    border:none;
+    z-index: 999;
+    box-shadow: 5px 5px 5px black;
+}
+.index-btn2{
+    padding:10px 20px;
+    position: fixed;
+    top:40%;
+    right:0%;
+    background-color: #fff;
+    border: none;
+    box-shadow: 5px 5px 5px black;
+    z-index: 999;
+}

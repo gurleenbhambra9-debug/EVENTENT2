@@ -1,0 +1,76 @@
+/* work one */
+#work-one{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/videos/concert6.jpg');
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.work-one-h1{
+    font-family: var(--font-heading);
+    font-size: 80px;
+    border-bottom: 2px solid var(--skin-color);
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* 480px work one */
+@media (max-width:480px){
+    .work-one-h1{
+        font-size: 40px;
+    }
+}
+/* work two */
+#work-two{
+    padding: 30px;
+}
+.work-two-h3{
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-top: 100px;
+}
+.work-two-h2{
+    font-family: var(--font-heading);
+    margin-top: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.work-two-img{
+    width: 100%;
+    height: 400px;
+}
+.work-two-row2{
+    margin-top: 60px;
+}
+.work-two-h5{
+    font-family: var(--font-body);
+    margin-top: 10px;
+    font-weight: bold;
+}
+/* 480px work two */
+@media (max-width:480px){
+    #work-two{
+    padding: 20px;
+}
+.work-two-h3{
+    margin-top: 60px;
+}
+.work-two-h2{
+   
+    margin-top: 20px;
+    margin-bottom: 60px;
+   
+    font-size: 35px;
+}
+.work-two-img{
+
+    height: 350px;
+}
+
+}
