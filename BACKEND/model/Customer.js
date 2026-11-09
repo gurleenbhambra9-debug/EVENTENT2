@@ -26,7 +26,12 @@ const customerSchema= new mongoose.Schema({
         type:String,
         enum:['Hindi', 'English', 'Punjabi'],
         default:"English"
-    }
+    },
+    userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+    required: true
+}
 }, {
     timestamps:true
 })
