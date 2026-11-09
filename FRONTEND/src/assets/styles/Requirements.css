@@ -1,0 +1,56 @@
+#requirementsss{
+    padding:60px;
+    font-family: var(--font-heading);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/videos/wedding deco2.jpg');
+    background-size: cover;
+    background-position: center;
+    color:#fff;
+   
+}
+.requirements-h2{
+    color:var(--skin-color)
+}
+.form-group1-requirements, .form-group2-requirements, .form-group3-requirements, .form-group4-requirements, .form-group5-requirements, .form-group6-requirements{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 40px;
+}
+.form-wrap1{
+    display: flex;
+    /* gap:30px; */
+}
+.form-wrap2{
+    display: flex;
+}
+/* .form-group1-requirements, .form-group2-requirements{
+    width: 50%;
+} */
+/* .form-group4-requirements, .form-group5-requirements{
+    width: 50%;
+} */
+.form-group1-requirements input, .form-group3-requirements input{
+    padding-left: 10px;
+    height:40px;
+}
+.form-group4-requirements textarea, .form-group5-requirements textarea, .form-group6-requirements textarea{
+     padding-left: 10px;
+}
+.form-group7-requirements{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.requirements-submit-btn{
+    padding:10px 40px;
+    border:none;
+    background-color: var(--skin-color);
+}
+/* 480px */
+@media (max-width:480px){
+    #requirements{
+    padding:30px;
+    
+   
+}
+}

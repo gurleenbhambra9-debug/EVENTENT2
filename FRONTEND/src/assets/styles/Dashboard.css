@@ -1,0 +1,721 @@
+
+
+
+/* /* =========================================
+   EVENTENT ADMIN DASHBOARD
+   Premium Navy / Beige / White Theme
+========================================= */
+
+:root {
+    --dashboard-dark: #17232D;
+    --dashboard-dark-light: #263641;
+    --dashboard-gold: #EAB88B;
+    --dashboard-gold-dark: #A17A59;
+    --dashboard-bg: #F7F7F6;
+    --dashboard-white: #FFFFFF;
+    --dashboard-border: #EAE8E4;
+    --dashboard-text: #29343D;
+    --dashboard-muted: #92999E;
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+ .dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background: var(--dashboard-bg);
+    color: var(--dashboard-text);
+    font-family: 'Manrope', sans-serif;
+}
+
+.dashboard-main {
+    flex: 1;
+    min-width: 0;
+} 
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+ .dashboard-sidebar {
+    width: 245px;
+    min-width: 245px;
+    min-height: 100vh;
+    background: var(--dashboard-dark);
+    color: white;
+    padding: 32px 21px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
+}
+
+
+/* Logo */
+
+.dashboard-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 29px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.dashboard-logo span {
+    color: var(--dashboard-gold);
+}
+
+.dashboard-logo small {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #AAB4BC;
+    margin-top: 3px;
+} 
+
+
+/* Sidebar Heading */
+
+.sidebar-heading {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #89949C;
+    margin: 55px 10px 18px;
+}
+
+
+/* Navigation */
+
+ .dashboard-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+} 
+
+ .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #AAB4BC;
+    text-decoration: none;
+    padding: 13px 14px;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.nav-item i {
+    width: 17px;
+    font-size: 13px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background: #2B3944;
+    color: var(--dashboard-gold);
+}
+
+
+/* Sidebar Bottom */
+
+ .sidebar-bottom {
+    margin-top: auto;
+}
+
+.sidebar-admin {
+    border-top: 1px solid #35414A;
+    padding: 22px 5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-avatar,
+.topbar-avatar {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--dashboard-gold);
+    color: var(--dashboard-dark);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.sidebar-admin h4 {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.sidebar-admin p {
+    font-size: 10px;
+    color: #AAB4BC;
+    margin: 5px 0 0;
+} 
+
+
+/* Logout */
+
+.logout-btn {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #46535D;
+    border-radius: 5px;
+    color: #D0D6DA;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logout-btn:hover {
+    background: var(--dashboard-gold);
+    color: var(--dashboard-dark);
+    border-color: var(--dashboard-gold);
+} 
+
+
+/* =========================================
+   TOPBAR
+========================================= */
+
+.dashboard-topbar {
+    min-height: 100px;
+    background: var(--dashboard-white);
+    border-bottom: 1px solid var(--dashboard-border);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-topbar span {
+    color: var(--dashboard-gold-dark);
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.dashboard-topbar h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--dashboard-dark);
+    margin: 5px 0 0;
+}
+
+.topbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.topbar-admin-info {
+    text-align: right;
+}
+
+.topbar-admin-info h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--dashboard-dark);
+    margin: 0;
+}
+
+.topbar-admin-info p {
+    font-size: 10px;
+    color: var(--dashboard-muted);
+    margin: 4px 0 0;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.dashboard-content {
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+} 
+
+
+/* =========================================
+   DASHBOARD INTRODUCTION
+========================================= */
+
+ .dashboard-intro {
+    margin-bottom: 30px;
+}
+
+.intro-label {
+    color: var(--dashboard-gold-dark);
+    font-size: 9px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.dashboard-intro h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 29px;
+    font-weight: 700;
+    color: var(--dashboard-dark);
+    margin: 9px 0;
+}
+
+.dashboard-intro p {
+    font-size: 12px;
+    color: var(--dashboard-muted);
+    margin: 0;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin: 30px 0 50px;
+}
+
+.stat-box {
+    background: var(--dashboard-white);
+    border: 1px solid var(--dashboard-border);
+    border-radius: 9px;
+    padding: 25px 28px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.stat-box:hover {
+    border-color: #D8B99D;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(23, 35, 45, 0.04);
+}
+
+.stat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-top > span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #93999D;
+    font-weight: 700;
+}
+
+.stat-icon {
+    height: 39px;
+    width: 39px;
+    border-radius: 7px;
+    background: #F8F0E9;
+    color: var(--dashboard-gold-dark);
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+}
+
+.stat-box h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 43px;
+    font-weight: 700;
+    color: var(--dashboard-dark);
+    margin: 17px 0 5px;
+}
+
+.stat-box p {
+    font-size: 11px;
+    color: var(--dashboard-muted);
+    margin: 0;
+}
+
+
+/* =========================================
+   DASHBOARD SECTIONS
+========================================= */
+
+.dashboard-section {
+    margin-bottom: 45px;
+    scroll-margin-top: 25px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-heading-span {
+    display: block;
+    color: var(--dashboard-gold-dark) !important;
+    font-weight: 700 !important;
+    font-size: 10px !important;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--dashboard-dark);
+    margin: 7px 0 0;
+} 
+
+
+/* =========================================
+   REGISTERED USERS DIRECTORY
+========================================= */
+
+.users-directory {
+    background: var(--dashboard-white);
+    border: 1px solid var(--dashboard-border);
+    border-radius: 9px;
+    overflow: hidden;
+    margin-top: 22px;
+} 
+
+/* Directory Header */
+
+ .users-directory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 28px;
+    border-bottom: 1px solid #EEECE8;
+}
+
+.users-directory-header h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dashboard-dark);
+    margin: 0 0 6px;
+}
+
+.users-directory-header p {
+    font-size: 11px;
+    color: var(--dashboard-muted);
+    margin: 0;
+}
+
+.users-count {
+    background: #F8F1EA;
+    color: var(--dashboard-gold-dark);
+    padding: 9px 15px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* Table Wrapper */
+
+ .users-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+} 
+
+
+/* Table */
+
+ .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+    background: #FFFFFF;
+}
+
+.users-table thead {
+    background: #FAFAF9;
+}
+
+.users-table th {
+    padding: 17px 22px;
+    text-align: left;
+    font-size: 9px;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #92999E;
+    border-bottom: 1px solid #EEECE8;
+    white-space: nowrap;
+}
+
+.users-table td {
+    padding: 19px 22px;
+    border-bottom: 1px solid #F0EFEC;
+    font-size: 12px;
+    color: #46515A;
+}
+
+.users-table tbody tr {
+    transition: background 0.25s ease;
+}
+
+.users-table tbody tr:hover {
+    background: #FCF9F6;
+}
+
+.users-table tbody tr:last-child td {
+    border-bottom: none;
+}
+ 
+
+/* Serial Number */
+
+.user-number {
+    color: #B5A18F !important;
+    font-size: 11px !important;
+    font-weight: 700;
+} 
+
+
+/* User Profile */
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    height: 38px;
+    width: 38px;
+    min-width: 38px;
+    border-radius: 50%;
+    background: #F3E5D8;
+    color: #956D4C;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.user-info h5 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #263540;
+    margin: 0 0 5px;
+}
+
+.user-info span {
+    font-size: 10px;
+    color: #A0A5A9;
+}
+ 
+
+/* Email and Date */
+
+.user-email {
+    color: #626D75 !important;
+}
+
+.user-date {
+    color: #737D83 !important;
+    white-space: nowrap;
+} 
+
+
+/* Empty Users */
+
+.empty-users {
+    text-align: center !important;
+    padding: 35px !important;
+    color: #92999E !important;
+} 
+
+
+/* =========================================
+   CUSTOMER / EVENTS / REQUIREMENTS
+========================================= */
+
+#customers,
+#events,
+#requirements {
+    background: transparent;
+    padding: 0;
+}
+
+.display-container {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid var(--dashboard-border);
+    border-radius: 9px;
+    padding: 25px;
+    overflow-x: auto;
+} 
+
+
+/* =========================================
+   LOADING AND ERROR
+========================================= */
+
+.dashboard-message {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--dashboard-bg);
+    font-family: 'Manrope', sans-serif;
+    color: var(--dashboard-dark);
+}
+
+.dashboard-message h3,
+.dashboard-message p {
+    font-size: 15px;
+} 
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .dashboard-sidebar {
+        width: 210px;
+        min-width: 210px;
+        padding: 25px 15px;
+    }
+
+    .dashboard-content {
+        padding: 30px 22px;
+    }
+
+    .dashboard-topbar {
+        padding: 20px 25px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    .dashboard-sidebar {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+        height: auto;
+        padding: 18px 15px;
+    }
+
+    .dashboard-logo {
+        font-size: 25px;
+    }
+
+    .sidebar-heading,
+    .sidebar-bottom {
+        display: none;
+    }
+
+    .dashboard-nav {
+        flex-direction: row;
+        overflow-x: auto;
+        margin-top: 17px;
+        gap: 7px;
+        padding-bottom: 5px;
+    }
+
+    .nav-item {
+        white-space: nowrap;
+        padding: 10px 12px;
+        font-size: 11px;
+    }
+
+    .nav-item i {
+        font-size: 11px;
+    }
+
+    .dashboard-topbar {
+        min-height: 80px;
+        padding: 15px 18px;
+    }
+
+    .dashboard-topbar h2 {
+        font-size: 25px;
+    }
+
+    .topbar-admin-info {
+        display: none;
+    }
+
+    .dashboard-content {
+        padding: 25px 16px;
+    }
+
+    .dashboard-intro h3 {
+        font-size: 25px;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin: 25px 0 40px;
+    }
+
+    .stat-box {
+        padding: 22px;
+    }
+
+    .section-heading h3 {
+        font-size: 22px;
+    }
+
+    .display-container {
+        padding: 15px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .dashboard-content {
+        padding: 22px 12px;
+    }
+
+    .users-directory-header {
+        padding: 18px 13px;
+        gap: 10px;
+    }
+
+    .users-directory-header h4 {
+        font-size: 12px;
+    }
+
+    .users-directory-header p {
+        font-size: 10px;
+    }
+
+    .users-count {
+        padding: 8px 10px;
+        font-size: 9px;
+    }
+
+} 
+
+

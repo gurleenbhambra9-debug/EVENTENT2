@@ -1,0 +1,50 @@
+
+.requirements-one {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 25px;
+    padding: 25px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border: 1px solid #e5d8cc;
+    border-left: 4px solid #EAB88B;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    color: #252525;
+}
+
+.requirements-one h3 {
+    grid-column: 1 / -1;
+    margin: 0 0 5px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee5dc;
+    color: #222222;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.requirements-one p {
+    margin: 0;
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+.requirements-one strong {
+    color: #98704f;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .requirements-one {
+        grid-template-columns: 1fr;
+        gap: 13px;
+        padding: 18px;
+    }
+
+    .requirements-one h3 {
+        font-size: 17px;
+    }
+}

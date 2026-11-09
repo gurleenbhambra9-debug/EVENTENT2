@@ -1,0 +1,132 @@
+
+/* EVENTS LIST */
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+/* EVENT BOX */
+
+.eventsData-one {
+    background: #FFFFFF;
+    border: 1px solid #EAE8E4;
+    border-radius: 8px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.eventsData-one:hover {
+    border-color: #D8B99D;
+    box-shadow: 0 6px 20px rgba(23, 35, 45, 0.04);
+}
+
+/* HEADER */
+
+.event-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #EEECE8;
+    margin-bottom: 20px;
+}
+
+.event-card-header > div > span {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #A17A59;
+    font-weight: 700;
+}
+
+.event-card-header h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: #17232D;
+    margin: 6px 0 0;
+    font-weight: 700;
+}
+
+.event-date {
+    background: #F8F1EA;
+    color: #956D4C;
+    padding: 9px 13px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* EVENT DETAILS */
+
+.event-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px 20px;
+}
+
+.event-details-grid > div > span {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 1px;
+    color: #92999E;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.event-details-grid p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #29343D;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* MESSAGES */
+
+.events-message {
+    background: #FFFFFF;
+    border: 1px solid #EAE8E4;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #92999E;
+}
+
+.events-error {
+    color: #B54747;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .eventsData-one {
+        padding: 18px;
+    }
+
+    .event-details-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 12px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .event-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+

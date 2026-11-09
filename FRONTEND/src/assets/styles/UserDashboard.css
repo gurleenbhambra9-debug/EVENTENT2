@@ -1,0 +1,160 @@
+
+.user-dashboard {
+    min-height: 100vh;
+    background: #f7f5f2;
+    color: #252525;
+    font-family: 'Manrope', sans-serif;
+}
+
+.user-dashboard-header {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #101820;
+    color: #fff;
+}
+
+.user-dashboard-logo {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.user-dashboard-logo span {
+    color: #EAB88B;
+}
+
+.user-dashboard-header button {
+    border: 1px solid #EAB88B;
+    background: transparent;
+    color: #EAB88B;
+    padding: 10px 22px;
+    cursor: pointer;
+}
+
+.user-dashboard-main {
+    width: 86%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 55px 0;
+}
+
+.user-welcome {
+    margin-bottom: 35px;
+}
+
+.user-welcome > p:first-child,
+.user-profile-section span,
+.user-section-heading span {
+    color: #b47c4e;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.user-welcome h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.user-welcome > p:last-child {
+    color: #777;
+}
+
+.user-profile-section {
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    border-left: 4px solid #EAB88B;
+    margin-bottom: 45px;
+}
+
+.user-profile-section h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.user-profile-section p {
+    color: #777;
+    margin: 0;
+}
+
+.user-count {
+    text-align: center;
+    min-width: 150px;
+}
+
+.user-count h2 {
+    font-size: 35px;
+    color: #b47c4e;
+}
+
+.user-section-heading {
+    margin-bottom: 20px;
+}
+
+.user-section-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+}
+
+.user-enquiry {
+    background: #fff;
+    padding: 28px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.user-enquiry h3 {
+    color: #b47c4e;
+}
+
+.user-enquiry h4 {
+    margin-top: 25px;
+}
+
+.user-enquiry p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.no-enquiries {
+    background: #fff;
+    padding: 45px 25px;
+    text-align: center;
+}
+
+.no-enquiries p {
+    color: #777;
+}
+
+@media(max-width: 600px) {
+    .user-dashboard-main {
+        width: 90%;
+        padding: 35px 0;
+    }
+
+    .user-welcome h1 {
+        font-size: 34px;
+    }
+
+    .user-profile-section {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .user-count {
+        text-align: left;
+    }
+
+    .user-dashboard-header {
+        padding: 0 5%;
+    }
+}

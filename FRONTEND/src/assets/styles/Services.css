@@ -1,0 +1,179 @@
+/* services one */
+#services-one{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/videos/concert6.jpg');
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.services-one-h1{
+    font-family: var(--font-heading);
+    font-size: 80px;
+    border-bottom: 2px solid var(--skin-color);
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* 480px services one */
+@media (max-width:480px){
+.services-one-h1{
+    font-size: 40px;
+}
+}
+/* services two */
+#services-two{
+    padding:100px;
+}
+.services-two-h4{
+    text-align: center;
+    font-family: var(--font-heading);
+}
+.services-two-h2{
+    text-align: center;
+    font-family: var(--font-heading);
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 40px;
+    
+    
+}
+.services-two-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border:1px solid black; */
+    padding:20px 20px;
+    background-color:#f3d7bf;
+}
+.services-two-col:hover{
+    background-color: var(--skin-color);
+}
+.services-two-row-h3{
+    font-family: var(--font-body);
+}
+.services-two-col i{
+    font-size: 30px;
+}
+.services-two-container {
+   margin-top: 70px;
+}
+.row1, .row2, .row3{
+    display: flex;
+    justify-content: center;
+    gap:25px;
+}
+.row2{
+    margin-top: 25px !important;
+}
+.row3{
+    margin-top: 25px !important;
+}
+/* 480px services two */
+@media (max-width:480px){
+    #services-two{
+    padding:60px;
+}
+.services-two-h4{
+    font-size: 20px;
+}
+.services-two-h2{
+    font-size: 28px;
+    
+    
+}
+}
+/* services three */
+#services-three{
+    padding:60px;
+}
+.services-three-h4{
+    text-align: center;
+    font-family: var(--font-heading);
+}
+.services-three-h2{
+    text-align: center;
+    font-family: var(--font-heading);
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.services-three-row1{
+    display: flex;
+    justify-content: center;
+    border-top:1px solid black;
+    padding:30px;
+    margin-top: 30px;
+}
+.services-three-row1-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-three-row2{
+    display: flex;
+    justify-content: center;
+    border-top:1px solid black;
+    padding:30px;
+}
+.services-three-row2-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-three-row3{
+    display: flex;
+    justify-content: center;
+    border-top:1px solid black;
+    padding:30px;
+}
+.services-three-row3-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services-three-row-btn{
+    padding:10px 20px;
+    border: none;
+    background-color: var(--skin-color);
+}
+.services-three-row1-col i, .services-three-row2-col i, .services-three-row3-col i{
+    font-size: 50px;
+}
+.services-three-row-h3{
+    font-family: var(--font-heading);
+}
+.services-three-row-p{
+    font-family: var(--font-body);
+    margin-top: 20px;
+}
+/* 480px services three */
+@media (max-width:480px){
+    #services-three{
+    padding:50px;
+}
+.services-three-h4{
+    font-size: 20px;
+}
+.services-three-h2{
+    font-size: 28px;
+}
+
+.services-three-row-h3{
+   font-size: 22px;
+    margin-top: 25px;
+}
+.services-three-row-p{
+    text-align: justify;
+    margin-top: 20px;
+}
+}
